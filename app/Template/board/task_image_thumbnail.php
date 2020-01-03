@@ -8,7 +8,7 @@
 if (! empty($task['owner_id'])): ?>
 <div class="task-board-thumbnails">
     <span>
-        <? // = $this->thumbnail->render($task['id'], $task['project_id']) ?>		
+        <?= $this->thumbnail->render($task['id'], $task['project_id']) ?>		
     </span>
 </div>
 <?php endif ?>

@@ -362,10 +362,62 @@ abstract class FileModel extends Base
      * @param  string   $destination_filename
      * @param  string   $data
      */
+	 
+	// Senol begin
+	// Add thumbnail display on cards in board view
+	/*
+	// Senol end
     public function generateThumbnailFromData($destination_filename, &$data)
     {
         $blob = Thumbnail::createFromString($data)
             ->resize()
+            ->toString();
+
+        $this->objectStorage->put($this->getThumbnailPath($destination_filename), $blob);
+    }
+	// Senol begin
+	// Add thumbnail display on cards in board view
+	*/
+	// Senol end
+
+    /**
+     * Generate thumbnail from a local file
+     *
+     * @access public
+     * @param  string   $uploaded_filename
+     * @param  string   $destination_filename
+     */
+	 // Senol begin
+	 // Add thumbnail display on cards in board view
+	/*
+	// Senol end
+    public function generateThumbnailFromFile($uploaded_filename, $destination_filename)
+    {
+        $blob = Thumbnail::createFromFile($uploaded_filename)
+            ->resize()
+            ->toString();
+
+        $this->objectStorage->put($this->getThumbnailPath($destination_filename), $blob);
+    }
+	// Senol begin
+	// Add thumbnail display on cards in board view
+	*/
+	// Senol end
+	
+	
+	// Senol begin
+	// Add thumbnail display on cards in board view
+    /**
+     * Generate thumbnail from a blob
+     *
+     * @access public
+     * @param  string   $destination_filename
+     * @param  string   $data
+     */
+    public function generateThumbnailFromData($destination_filename, &$data)
+    {
+        $blob = Thumbnail::createFromString($data)
+            ->resize(595,238)
             ->toString();
 
         $this->objectStorage->put($this->getThumbnailPath($destination_filename), $blob);
@@ -381,9 +433,10 @@ abstract class FileModel extends Base
     public function generateThumbnailFromFile($uploaded_filename, $destination_filename)
     {
         $blob = Thumbnail::createFromFile($uploaded_filename)
-            ->resize()
+            ->resize(595,238)
             ->toString();
 
         $this->objectStorage->put($this->getThumbnailPath($destination_filename), $blob);
     }
+	// Senol end
 }
