@@ -34,6 +34,10 @@ class HelperProvider implements ServiceProviderInterface
         $container['helper']->register('url', '\Kanboard\Helper\UrlHelper');
         $container['helper']->register('user', '\Kanboard\Helper\UserHelper');
         $container['helper']->register('avatar', '\Kanboard\Helper\AvatarHelper');
+		// Senol start
+		// Add thumbnail display on cards in board view
+		$container['helper']->register('thumbnail', '\Kanboard\Helper\ThumbnailHelper');
+		// Senol end
         $container['helper']->register('projectRole', '\Kanboard\Helper\ProjectRoleHelper');
         $container['helper']->register('projectHeader', '\Kanboard\Helper\ProjectHeaderHelper');
         $container['helper']->register('projectActivity', '\Kanboard\Helper\ProjectActivityHelper');

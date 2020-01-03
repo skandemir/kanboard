@@ -511,6 +511,10 @@ return array(
     'Kanboard\\Helper\\AppHelper' => $baseDir . '/app/Helper/AppHelper.php',
     'Kanboard\\Helper\\AssetHelper' => $baseDir . '/app/Helper/AssetHelper.php',
     'Kanboard\\Helper\\AvatarHelper' => $baseDir . '/app/Helper/AvatarHelper.php',
+	// Senol start
+	// Add thumbnail display on cards in board view
+	'Kanboard\\Helper\\ThumbnailHelper' => $baseDir . '/app/Helper/ThumbnailHelper.php',
+	// Senol end
     'Kanboard\\Helper\\BoardHelper' => $baseDir . '/app/Helper/BoardHelper.php',
     'Kanboard\\Helper\\CommentHelper' => $baseDir . '/app/Helper/CommentHelper.php',
     'Kanboard\\Helper\\DateHelper' => $baseDir . '/app/Helper/DateHelper.php',

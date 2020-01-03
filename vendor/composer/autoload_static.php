@@ -622,6 +622,10 @@ class ComposerStaticInitbdc3716ceecc7570f8ff9a8407f0ca0e
         'Kanboard\\Helper\\AppHelper' => __DIR__ . '/../..' . '/app/Helper/AppHelper.php',
         'Kanboard\\Helper\\AssetHelper' => __DIR__ . '/../..' . '/app/Helper/AssetHelper.php',
         'Kanboard\\Helper\\AvatarHelper' => __DIR__ . '/../..' . '/app/Helper/AvatarHelper.php',
+		// Senol start
+		// Add thumbnail display on cards in board view
+		'Kanboard\\Helper\\ThumbnailHelper' => __DIR__ . '/../..' . '/app/Helper/ThumbnailHelper.php',
+		// Senol end
         'Kanboard\\Helper\\BoardHelper' => __DIR__ . '/../..' . '/app/Helper/BoardHelper.php',
         'Kanboard\\Helper\\CommentHelper' => __DIR__ . '/../..' . '/app/Helper/CommentHelper.php',
         'Kanboard\\Helper\\DateHelper' => __DIR__ . '/../..' . '/app/Helper/DateHelper.php',
