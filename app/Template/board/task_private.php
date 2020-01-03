@@ -63,7 +63,7 @@
 			
 			<?php // Senol start ?>
 			<?php // Add thumbnail display on cards in board view ?>
-			<? //= $this->render('board/task_image_thumbnail', array('task' => $task, 'project_id' => $task['project_id'])) ?>
+			<?= $this->render('board/task_image_thumbnail', array('task' => $task, 'project_id' => $task['project_id'])) ?>
 			<?php // Senol end ?>
 			
 			
