@@ -60,7 +60,6 @@
                 <?= $this->url->link($this->text->e($task['title']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
             </div>
 			
-			
 			<div class="task-board-image">
 			
 			<?php // Senol start ?>
