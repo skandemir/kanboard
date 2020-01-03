@@ -35,7 +35,6 @@ class ThumbnailHelper extends Base
 			$imageData = base64_encode(file_get_contents('data/files/'.$filename));
 
 			$src = 'data: image/jpeg;charset=utf-8;base64,'.$imageData;
-			// $src = 'data:image/gif;charset=utf-8;base64,'.$imageData;
 
 			$html = '<img src="'.$src.'", style="width:100%;height:100%">';
 			
