@@ -60,12 +60,12 @@
                 <?= $this->url->link($this->text->e($task['title']), 'TaskViewController', 'show', array('task_id' => $task['id'], 'project_id' => $task['project_id'])) ?>
             </div>
 			
-			<div class="task-board-image">
 			
 			<?php // Senol start ?>
 			<?php // Add thumbnail display on cards in board view ?>
-			<?= $this->render('board/task_image_thumbnail', array('task' => $task, 'project_id' => $task['project_id'])) ?>
+			<? //= $this->render('board/task_image_thumbnail', array('task' => $task, 'project_id' => $task['project_id'])) ?>
 			<?php // Senol end ?>
+			
 			
             <?= $this->hook->render('template:board:private:task:after-title', array('task' => $task)) ?>
 
